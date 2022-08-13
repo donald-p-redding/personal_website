@@ -1,0 +1,2 @@
+(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[5],{117:function(a,e,t){"use strict";t.r(e),e.default=t.p+"static/media/the-arroyo-framework.1c17e74e.md"}}]);
+//# sourceMappingURL=5.ad44653e.chunk.js.map
