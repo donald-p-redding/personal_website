@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Spotlight({
-  blog: { id, title, category, featureImage, date, author, slug },
+  blog: { id, title, category, featureImage, date, author, slug, link },
 }) {
   return (
     <div className="blog-item">
@@ -10,12 +9,12 @@ function Spotlight({
         {/* <a href="#!">
           <span className="category">{category}</span>
         </a> */}
-        <Link to={`blogs/${id}/${slug}`}>
+        <a rel="noreferrer" target="_blank" href={link}>
           <img src={featureImage} alt={title} />
-        </Link>
+        </a>
       </div>
       <h4 className="mt-4 mb-0">
-        <Link to={`blogs/${id}/${slug}`}>{title}</Link>
+        <a rel="noreferrer" target="_blank" href={link}>{title}</a>
       </h4>
       <ul className="list-inline meta mb-0 mt-3">
         <li className="list-inline-item">{date}</li>
