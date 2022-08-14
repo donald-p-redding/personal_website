@@ -121,6 +121,24 @@ function Header({ toggleHeader, toggleHandler }) {
                 {currentPath === "/" ? (
                   <ScrollLink
                     activeClass="active"
+                    to="section-portfolios"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    <i className="icon-grid"></i>Works
+                  </ScrollLink>
+                ) : (
+                  <Link to="/">
+                    <i className="icon-grid"></i>Works
+                  </Link>
+                )}
+              </li>
+              <li>
+                {currentPath === "/" ? (
+                  <ScrollLink
+                    activeClass="active"
                     to="section-skills"
                     spy={true}
                     smooth={true}
@@ -150,24 +168,6 @@ function Header({ toggleHeader, toggleHandler }) {
                 ) : (
                   <Link to="/">
                     <i className="icon-graduation"></i>Resume
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-portfolios"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-grid"></i>Works
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-grid"></i>Works
                   </Link>
                 )}
               </li>
