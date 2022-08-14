@@ -11,6 +11,7 @@ const spotlightsData = [
     date: "12 August, 2022",
     author: "Don Redding",
     slug: "the-arroyo-framework",
+    link: "https://www.arroyoframework.com/case-study.html"
   }
 ];
 
