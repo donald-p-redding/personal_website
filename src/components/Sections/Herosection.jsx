@@ -20,6 +20,17 @@ function Herosection() {
         <p className="mb-4">{herosectionData.aboutMe}</p>
         <ScrollLink
           activeClass="active"
+          to="section-spotlight"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={50}
+          className="btn btn-default btn-lg mr-3"
+        >
+          <i className="icon-pin"></i>Spotlight
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
           to="section-portfolios"
           spy={true}
           smooth={true}

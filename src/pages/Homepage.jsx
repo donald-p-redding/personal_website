@@ -10,6 +10,7 @@ import Experiences from "../components/Sections/Experiences";
 import Portfolios from "../components/Sections/Portfolios";
 import Contact from "../components/Sections/Contact";
 import Spotlights from "../components/Sections/Spotlights";
+import Arroyo from "../components/Spotlights/Arroyo";
 
 import { 
   FaJs,
@@ -120,16 +121,16 @@ function Homepage() {
         </section>
       </Element>
 
-      <Element name="section-funfacts">
-        <Funfacts />
+      <Element name="section-spotlight">
+        <section className="shadow-blue arroyo-gradient padding">
+          <Arroyo />
+       </section>
       </Element>
 
-      <Element name="section-spotlights">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Spotlights" />
-          <Spotlights />
-        </section>
-      </Element>
+      {/* <Element name="section-funfacts">
+        <Funfacts />
+      </Element> */}
+
 
       <Element name="section-portfolios">
         <section className="shadow-blue white-bg padding">
