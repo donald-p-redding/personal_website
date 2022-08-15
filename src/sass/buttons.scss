@@ -29,6 +29,7 @@
 .btn-default {
   color: #fff;
   background: $colororange;
+  margin-bottom: 10px;
 
   &:not([href]):not([tabindex]) {
     color: #fff;

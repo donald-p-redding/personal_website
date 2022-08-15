@@ -121,7 +121,7 @@ function Homepage() {
         </section>
       </Element>
 
-      <Element name="section-spotlights">
+      <Element name="section-spotlight">
         <section className="shadow-blue arroyo-gradient padding">
           <Arroyo />
        </section>
