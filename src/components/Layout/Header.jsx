@@ -121,6 +121,24 @@ function Header({ toggleHeader, toggleHandler }) {
                 {currentPath === "/" ? (
                   <ScrollLink
                     activeClass="active"
+                    to="section-spotlight"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    <i className="icon-pin"></i>Spotlight
+                  </ScrollLink>
+                ) : (
+                  <Link to="/">
+                    <i className="icon-pin"></i>Spotlight
+                  </Link>
+                )}
+              </li>
+              <li>
+                {currentPath === "/" ? (
+                  <ScrollLink
+                    activeClass="active"
                     to="section-portfolios"
                     spy={true}
                     smooth={true}
