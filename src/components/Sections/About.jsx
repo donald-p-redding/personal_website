@@ -7,7 +7,7 @@ const aboutData = {
   location: "Los Angeles, CA",
   email: "don@donaldredding.dev",
   aboutMe:
-    `I am a web developer based out of Los Angeles, California. I cut my teeth in the world of low voltage construction before transitioning into development. The construction world taught me the importance of clear communication and the invaluable impact of mentorship. Software is inherently collaborative, and the ability to learn from the experiences of others is essential to me.`,
+    `I am a software engineer based out of Los Angeles, California. I cut my teeth in the world of low voltage construction before transitioning into development. The construction world taught me the importance of clear communication and the invaluable impact of mentorship. Software is inherently collaborative, and the ability to learn from the experiences of others is essential to me.`,
 };
 
 function About() {

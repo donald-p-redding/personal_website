@@ -9,7 +9,7 @@ import {
 
 const headerData = {
   name: "Donald Redding",
-  designation: "Web Developer",
+  designation: "Software Engineer",
   imageThumb: "/images/profile_pic.png",
   social: {
     facebook: "https://www.facebook.com/donny.redding",
