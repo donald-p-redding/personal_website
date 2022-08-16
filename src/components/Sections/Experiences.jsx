@@ -5,26 +5,33 @@ const experiencesData = [
   {
     id: 1,
     year: "2022 - Present",
-    degree: "Full Stack Developer",
+    degree: "Software Engineer",
     content:
       "Arroyo",
   },
   {
     id: 2,
+    year: "2019 - 2022",
+    degree: "Software Engineer",
+    content:
+      "Launch School",
+  },
+  {
+    id: 3,
     year: "2016 - 2022",
     degree: "Project Manager",
     content:
       "Media Home Theater Inc. Los Angeles, California",
   },
   {
-    id: 3,
+    id: 4,
     year: "2010 - 2012",
     degree: "Bachelor’s Degree",
     content:
       "North Dakota State University. Fargo, North Dakota.",
   },
   {
-    id: 4,
+    id: 5,
     year: "2009 - 2010",
     degree: "Undergraduate Studies: Computer Science",
     content:

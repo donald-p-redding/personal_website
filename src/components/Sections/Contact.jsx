@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
 
 const contactData = {
-  phone: ["(805) 366-5976"],
-  email: ["contact@donaldredding.dev "],
+  email: ["don@donaldredding.dev"],
   location: "Los Angeles, California",
 };
 
@@ -79,15 +78,6 @@ function Contact() {
   return (
     <div className="row">
       <div className="col-md-4 mb-4 mb-md-0">
-        <div className="contact-info mb-5">
-          <i className="icon-phone"></i>
-          <div className="details">
-            <h5>Phone</h5>
-            {contactData.phone.map((singlePhone, index) => (
-              <span key={index}>{singlePhone}</span>
-            ))}
-          </div>
-        </div>
         <div className="contact-info mb-5">
           <i className="icon-envelope"></i>
           <div className="details">

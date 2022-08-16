@@ -5,8 +5,7 @@ const aboutData = {
   image: "images/candid_b&w.png",
   name: "Donald Redding",
   location: "Los Angeles, CA",
-  birthday: "04 October, 1990",
-  email: "dev.donald.redding@gmail.com",
+  email: "don@donaldredding.dev",
   aboutMe:
     `I am a web developer based out of Los Angeles, California. I cut my teeth in the world of low voltage construction before transitioning into development. The construction world taught me the importance of clear communication and the invaluable impact of mentorship. Software is inherently collaborative, and the ability to learn from the experiences of others is essential to me.`,
 };
@@ -24,9 +23,6 @@ function About() {
           <div className="col-md-6">
             <p className="mb-2">
               Name: <span className="text-dark">{aboutData.name}</span>
-            </p>
-            <p className="mb-0">
-              Birthday: <span className="text-dark">{aboutData.birthday}</span>
             </p>
           </div>
           <div className="col-md-6 mt-2 mt-md-0 mt-sm-2">
