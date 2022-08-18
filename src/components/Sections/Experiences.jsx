@@ -6,13 +6,15 @@ const experiencesData = [
     id: 1,
     year: "2022 - Present",
     degree: "Software Engineer",
+    link: "https://www.arroyoframework.com/",
     content:
-      "Arroyo",
+      `Arroyo`,
   },
   {
     id: 2,
     year: "2019 - 2022",
-    degree: "Software Engineer",
+    degree: "Capstone Student",
+    link: "https://launchschool.com/",
     content:
       "Launch School",
   },
