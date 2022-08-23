@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 const herosectionData = {
   name: "Welcome",
   aboutMe:
-    "I'm a software engineer and a lifelong learner.",
+    "I am a full-stack software engineer with multiple years of experience with JavaScript, Ruby, Go and a variety of frameworks. I have experience working with AWS and the ELK stack. I am a co-creator of Arroyo, a lightweight framework to rehyrate logs from cloud storage back into Elasticsearch.",
 };
 
 function Herosection() {
@@ -28,17 +28,6 @@ function Herosection() {
           className="btn btn-default btn-lg mr-3"
         >
           <i className="icon-pin"></i>Spotlight
-        </ScrollLink>
-        <ScrollLink
-          activeClass="active"
-          to="section-portfolios"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={50}
-          className="btn btn-default btn-lg mr-3"
-        >
-          <i className="icon-grid"></i>View Portfolio
         </ScrollLink>
         <div
           className="spacer d-md-none d-lg-none d-sm-none"

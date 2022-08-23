@@ -14,7 +14,6 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Homepage} exact />
-        <Route path="/blogs/:id/:title" component={BlogDetails} />
       </Switch>
     </BrowserRouter>
   );

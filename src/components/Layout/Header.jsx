@@ -212,13 +212,6 @@ function Header({ toggleHeader, toggleHandler }) {
 
           <div className="footer mt-auto">
             <ul className="social-icons list-inline">
-              {!headerData.social.facebook ? null : (
-                <li className="list-inline-item">
-                  <a target="_blank" rel="noreferrer" href={headerData.social.facebook}>
-                    <FaFacebookF />
-                  </a>
-                </li>
-              )}
               {!headerData.social.linkedin ? null : (
                 <li className="list-inline-item">
                   <a target="_blank" rel="noreferrer" href={headerData.social.linkedin}>
