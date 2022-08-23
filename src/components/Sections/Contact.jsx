@@ -41,7 +41,7 @@ function Contact() {
   const submitEmail = async() => {
     try {
       await emailjs.send("service_ucsox8i","contact_form", formdata, "2LMAbSLXyanZbUENl")
-      setMessage('Message Recieved. Be sure to check your spam folder for automated confirmation');
+      setMessage('Message Received. Be sure to check your spam folder for an automated confirmation');
     } catch {
       setError(true)
       setMessage("Unable to submit request.")

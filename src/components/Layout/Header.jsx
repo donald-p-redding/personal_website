@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useRouteMatch } from "react-router-dom";
 import {
-  FaFacebookF,
+  FaEnvelope,
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
@@ -12,7 +12,7 @@ const headerData = {
   designation: "Software Engineer",
   imageThumb: "/images/profile_pic.png",
   social: {
-    facebook: "https://www.facebook.com/donny.redding",
+    email: "mailto:don@donaldredding.dev",
     github: "https://github.com/donald-p-redding",
     linkedin: "https://www.linkedin.com/in/donald-redding-36a093234/",
   },
@@ -145,11 +145,11 @@ function Header({ toggleHeader, toggleHandler }) {
                     offset={-50}
                     duration={500}
                   >
-                    <i className="icon-grid"></i>Works
+                    <i className="icon-grid"></i>Portfolio
                   </ScrollLink>
                 ) : (
                   <Link to="/">
-                    <i className="icon-grid"></i>Works
+                    <i className="icon-grid"></i>Portfolio
                   </Link>
                 )}
               </li>
@@ -181,7 +181,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     offset={-50}
                     duration={500}
                   >
-                    <i className="icon-graduation"></i>Experience
+                    <i className="icon-graduation"></i>Experience/Education
                   </ScrollLink>
                 ) : (
                   <Link to="/">
@@ -212,13 +212,6 @@ function Header({ toggleHeader, toggleHandler }) {
 
           <div className="footer mt-auto">
             <ul className="social-icons list-inline">
-              {!headerData.social.facebook ? null : (
-                <li className="list-inline-item">
-                  <a target="_blank" rel="noreferrer" href={headerData.social.facebook}>
-                    <FaFacebookF />
-                  </a>
-                </li>
-              )}
               {!headerData.social.linkedin ? null : (
                 <li className="list-inline-item">
                   <a target="_blank" rel="noreferrer" href={headerData.social.linkedin}>
@@ -233,9 +226,14 @@ function Header({ toggleHeader, toggleHandler }) {
                   </a>
                 </li>
                 )}
+              {!headerData.social.email ? null : (
+                <li className="list-inline-item">
+                  <a target="_blank" rel="noreferrer" href={headerData.social.email}>
+                    <FaEnvelope />
+                  </a>
+                </li>
+                )}
             </ul>
-
-
           </div>
         </div>
       </header>
