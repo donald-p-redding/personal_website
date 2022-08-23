@@ -181,7 +181,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     offset={-50}
                     duration={500}
                   >
-                    <i className="icon-graduation"></i>Experience
+                    <i className="icon-graduation"></i>Experience/Education
                   </ScrollLink>
                 ) : (
                   <Link to="/">

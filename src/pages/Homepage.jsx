@@ -152,7 +152,7 @@ function Homepage() {
 
       <Element name="section-experiences">
         <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Experience" />
+          <SectionHeading title="Experience/Education" />
           <Experiences />
         </section>
       </Element>
