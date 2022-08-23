@@ -145,11 +145,11 @@ function Header({ toggleHeader, toggleHandler }) {
                     offset={-50}
                     duration={500}
                   >
-                    <i className="icon-grid"></i>Works
+                    <i className="icon-grid"></i>Portfolio
                   </ScrollLink>
                 ) : (
                   <Link to="/">
-                    <i className="icon-grid"></i>Works
+                    <i className="icon-grid"></i>Portfolio
                   </Link>
                 )}
               </li>
