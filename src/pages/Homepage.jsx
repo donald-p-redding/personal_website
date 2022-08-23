@@ -127,11 +127,6 @@ function Homepage() {
        </section>
       </Element>
 
-      {/* <Element name="section-funfacts">
-        <Funfacts />
-      </Element> */}
-
-
       <Element name="section-portfolios">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Portfolio" />
