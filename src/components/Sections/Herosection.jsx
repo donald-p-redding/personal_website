@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 const herosectionData = {
   name: "Welcome",
   aboutMe:
-    "I am a full-stack software engineer with multiple years of experience with JavaScript, Ruby, Go and a variety of frameworks. I have experience working with AWS and the ELK stack. I am a co-creator of Arroyo, a lightweight framework to rehyrate logs from cloud storage back into Elasticsearch.",
+    "I am a full-stack software engineer with multiple years of experience with JavaScript, Ruby, Go, and various frameworks. In addition, I have experience working with AWS and the ELK stack. I am a co-creator of Arroyo, a lightweight framework to rehydrate logs from cloud storage back into Elasticsearch.",
 };
 
 function Herosection() {
