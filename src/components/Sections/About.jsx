@@ -1,6 +1,6 @@
 import React from "react";
 
-const aboutData = {
+export const aboutData = {
   cvpath: "https://drive.google.com/file/d/1CsPVCzpZPmElw50rAC2TnLcHirwVe3KJ/view?usp=sharing",
   image: "images/candid_b&w.png",
   name: "Donald Redding",

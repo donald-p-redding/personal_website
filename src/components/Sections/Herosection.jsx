@@ -1,5 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { aboutData } from "./About";
 
 const herosectionData = {
   name: "Welcome",
@@ -40,10 +41,13 @@ function Herosection() {
           smooth={true}
           duration={500}
           offset={50}
-          className="btn btn-border-light btn-lg"
+          className="btn btn-default btn-lg mr-3"
         >
           <i className="icon-envelope"></i>Contact me
-        </ScrollLink>
+        </ScrollLink>        
+      <a target="_blank" rel="noreferrer" href={aboutData.cvpath} className="btn btn-default btn-lg mr-3">
+          <i className="icon-cloud-download"></i>Download Resume
+      </a>
       </div>
       <div className="overlay"></div>
     </section>
