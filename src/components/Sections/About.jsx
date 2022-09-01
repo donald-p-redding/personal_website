@@ -1,6 +1,6 @@
 import React from "react";
 
-const aboutData = {
+export const aboutData = {
   cvpath: "https://drive.google.com/file/d/1CsPVCzpZPmElw50rAC2TnLcHirwVe3KJ/view?usp=sharing",
   image: "images/candid_b&w.png",
   name: "Donald Redding",
@@ -35,7 +35,7 @@ function About() {
           </div>
         </div>
         <a target="_blank" rel="noreferrer" href={aboutData.cvpath} className="btn btn-default mr-3">
-          <i className="icon-cloud-download"></i>Download Resume
+          <i className="icon-doc"></i>Download Resume
         </a>
       </div>
     </div>
