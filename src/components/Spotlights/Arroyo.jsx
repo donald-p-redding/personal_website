@@ -6,7 +6,7 @@ function Arroyo () {
             <img alt="arroyo logo" src="images/spotlight/arroyologo_color_dark_bg.svg" />
           </div>
           <div class="snippet">
-            <p>Arroyo allows software engineers to query logs archived in cloud storage and conditionally reignest the matching logs back into their ELK stack.</p>
+            <p>Arroyo allows software engineers to query logs archived in cloud storage and conditionally reingest the matching logs back into their ELK stack.</p>
             <img alt="Arroyo User Interface" src="images/portfolio/bulk_10fps.gif"></img>
           </div>
           <div class="snippet">
