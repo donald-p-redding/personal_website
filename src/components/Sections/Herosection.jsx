@@ -4,8 +4,10 @@ import { aboutData } from "./About";
 
 const herosectionData = {
   name: "Welcome",
-  aboutMe:
-    "I am a full-stack software engineer with multiple years of experience with JavaScript, Ruby, Go, and various frameworks. In addition, I have experience working with AWS and the ELK stack. I am a co-creator of Arroyo, a lightweight framework to rehydrate logs from cloud storage back into Elasticsearch.",
+  aboutMe: [
+    "I'm a software engineer with experience building serverless solutions to derive additional insight into existing systems who enjoys collaborating with a team to tackle tricky problems.",
+    "I recently built Arroyo, a lightweight framework to rehydrate logs archived in cloud storage into Elasticsearch to breathe new life into older data."
+  ]
 };
 
 function Herosection() {
@@ -18,7 +20,7 @@ function Herosection() {
           {herosectionData.name}
           <span className="dot"></span>
         </h1>
-        <p className="mb-4">{herosectionData.aboutMe}</p>
+        {herosectionData.aboutMe.map(content => <p className="mb-4">{content}</p>)}
         <ScrollLink
           activeClass="active"
           to="section-spotlight"
