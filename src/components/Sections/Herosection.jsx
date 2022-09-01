@@ -46,7 +46,7 @@ function Herosection() {
           <i className="icon-envelope"></i>Contact me
         </ScrollLink>        
       <a target="_blank" rel="noreferrer" href={aboutData.cvpath} className="btn btn-default btn-lg mr-3">
-          <i className="icon-cloud-download"></i>Download Resume
+          <i className="icon-doc"></i>Download Resume
       </a>
       </div>
       <div className="overlay"></div>
