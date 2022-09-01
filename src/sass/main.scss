@@ -121,18 +121,18 @@ section {
   i {
     @include transition(0.3s);
   }
-  &:hover {
-    border-color: $colororange;
-    background: $colororange;
-    color: #fff;
-    -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
-    h4,
-    i {
-      color: #fff;
-    }
-  }
+  // &:hover {
+  //   border-color: $colororange;
+  //   background: $colororange;
+  //   color: #fff;
+  //   -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+  //   -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+  //   box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+  //   h4,
+  //   i {
+  //     color: #fff;
+  //   }
+  // }
 }
 
 .timeline {
