@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useRouteMatch } from "react-router-dom";
+import { aboutData } from "../Sections/About";
 import {
   FaEnvelope,
   FaLinkedin,
   FaGithub,
+  FaFileDownload
 } from "react-icons/fa";
 
 const headerData = {
@@ -232,7 +234,12 @@ function Header({ toggleHeader, toggleHandler }) {
                     <FaEnvelope />
                   </a>
                 </li>
-                )}
+              )}
+              <li className="list-inline-item">
+                <a target="_blank" rel="noreferrer" href={aboutData.cvpath} >
+                  <FaFileDownload />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
