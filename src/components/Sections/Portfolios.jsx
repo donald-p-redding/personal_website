@@ -52,33 +52,7 @@ const allData = [
     image: "images/portfolio/trello_demo.gif",
     slug: "Organization Tool Backed By Mongo DB Atlas",
     url: "https://github.com/donald-p-redding/trello_clone"
-  },
-  {
-    id: 5,
-    name: "React Airlines",
-    category: ["ui"],
-    image: "images/portfolio/react-airlines.png",
-    slug: "React Based UI Practice",
-    url: "https://github.com/donald-p-redding/react_airlines"
-  },
-  {
-    id: 6,
-    name: "Simple Photo Gallery",
-    category: ["ui"],
-    image: "images/portfolio/simple-photo-gallery.png",
-    slug: "jQuery UI Practice",
-    url: "https://github.com/donald-p-redding/simple_photo_gallery"
-
-  },
-  {
-    id: 7,
-    name: "Basic Todo Tracker",
-    category: ["ui"],
-    image: "images/portfolio/todo-tracker.png",
-    slug: "Heroku App With PostgreSQL DB",
-    url: "https://github.com/donald-p-redding/simple-todos"
-
-  },
+  }
 ];
 
 function Portfolios() {
@@ -87,7 +61,7 @@ function Portfolios() {
   const [dataIncrement] = useState(3);
   const [activeFilter, setActiveFilter] = useState("");
   const [visibleItems, setVisibleItems] = useState([]);
-  const [noMorePost, setNoMorePost] = useState(false);
+  const [noMorePost, setNoMorePost] = useState(true);
 
   useEffect(() => {
     setActiveFilter(filters[0].name.toLowerCase());
