@@ -3,9 +3,6 @@ import React from "react";
 function ArroyoContent () {
   return (
     <div class="arroyo-content">
-      <div class="center">
-        <img alt="arroyo logo" src="images/spotlight/arroyologo_color_dark_bg.svg" />
-      </div>
       <p>
         Arroyo integrates with a user's existing ELK stack to rehydrate logs archived in AWS S3 and re-ingests those logs back into Elasticsearch. Users can reingest logs by date range, and they may also input search terms to refine their search further.
       </p>

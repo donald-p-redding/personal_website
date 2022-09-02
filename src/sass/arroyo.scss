@@ -1,10 +1,19 @@
 /*=================================================================*/
 /*                      ARROYO                              
 /*=================================================================*/
+@media (max-width: 750px) {
+  #arroyo {
+    flex-direction: column;
+  }
+}
+
 #arroyo {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
+
+
 
 #arroyo .center {
   text-align: center;
@@ -23,6 +32,10 @@
 .arroyo-gradient {
   background: rgb(74,99,231);
   background: linear-gradient(90deg, rgba(74,99,231,1) 0%, rgba(24,115,152,1) 18%, rgba(8,6,1,1) 100%);  
+}
+
+.arroyo-media {
+  min-width: 350px;
 }
 
 

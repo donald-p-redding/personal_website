@@ -3,10 +3,15 @@ import ArroyoMedia from "./ArroyoMedia";
 
 function Arroyo () {
   return (
-    <section id="arroyo">
-      <ArroyoContent />
-      <ArroyoMedia />
-    </section>
+    <>
+      <div class="center">
+        <img alt="arroyo logo" src="images/spotlight/arroyologo_color_dark_bg.svg" />
+      </div>
+      <section id="arroyo">
+        <ArroyoContent />
+        <ArroyoMedia />
+      </section>
+    </>
 
   )
 }
@@ -22,7 +27,7 @@ function Arroyo () {
     //       </div>
     //       <div class="snippet">
     //         <p>Arroyo automatically deploys and destroys the necessary AWS infrastructure to perform rehydration tasks. Once a rehydration job is complete, newly indexed logs are searchable in a user's Kibana dashboard.</p>
-    //         <img alt="Arroyo Deployment Script" src="images/portfolio/deploy.gif"></img>
+            // <img alt="Arroyo Deployment Script" src="images/portfolio/deploy.gif"></img>
     //       </div>
     //       <a rel="noreferrer" target="_blank" href="https://www.arroyoframework.com/case-study.html" className="btn btn-border-light btn-lg">Learn More</a>
     //   </div>
