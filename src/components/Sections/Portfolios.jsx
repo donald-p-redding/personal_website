@@ -47,10 +47,10 @@ const allData = [
   },
   {
     id: 4,
-    name: "Trello Clone",
+    name: "Chalkboard",
     category: ["database"],
     image: "images/portfolio/trello_demo.gif",
-    slug: "Organization Tool Backed By Mongo DB Atlas",
+    slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB",
     url: "https://github.com/donald-p-redding/trello_clone"
   }
 ];
