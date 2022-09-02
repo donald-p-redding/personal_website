@@ -135,7 +135,7 @@ function Portfolios() {
 
   return (
     <>
-      <ul className="portfolio-filter list-inline">
+      {/* <ul className="portfolio-filter list-inline">
         {filters.map((filter) => (
           <li
             className={
@@ -149,7 +149,7 @@ function Portfolios() {
             {filter.name}
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       <div className="pf-filter-wrapper mb-4">
         <select
