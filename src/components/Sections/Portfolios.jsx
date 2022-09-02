@@ -26,7 +26,7 @@ const allData = [
     name: "Arroyo",
     category: ["frameworks"],
     image: "images/portfolio/bulk_10fps.gif",
-    slug: "A Lightweight Log Rehydration Tool",
+    slug: "A lightweight log rehydration tool to query logs archived in AWS S3 and re-ingest them into Elasticsearch that is built using React, Redux, and Express.",
     url: "https://github.com/Team-Arroyo/arroyo"
   },
     {
@@ -34,7 +34,7 @@ const allData = [
     name: "Arroyo Deploy",
     category: ["frameworks"],
     image: "images/portfolio/deploy.gif",
-    slug: "Automatically Deploy and Destory AWS Infrastructure for Arroyo",
+    slug: "Automatically deploy and destroy AWS infrastructure for Arroyo (SQS, S3, Lambda).",
     url: "https://github.com/Team-Arroyo/arroyo-deployment"
   },
   {
@@ -42,43 +42,17 @@ const allData = [
     name: "Request Bin",
     category: ["database"],
     image: "images/portfolio/request_bin_demo.gif",
-    slug: "Inspect and Debug HTTP Requests and Webhooks. Listed as contributor.",
+    slug: "Inspect and debug HTTP requests and webhooks. Built using PostgreSQL, MongoDB, Express, and React.",
     url: "https://github.com/olgashi/request_bin"
   },
   {
     id: 4,
-    name: "Trello Clone",
+    name: "Chalkboard",
     category: ["database"],
     image: "images/portfolio/trello_demo.gif",
-    slug: "Organization Tool Backed By Mongo DB Atlas",
+    slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB.",
     url: "https://github.com/donald-p-redding/trello_clone"
-  },
-  {
-    id: 5,
-    name: "React Airlines",
-    category: ["ui"],
-    image: "images/portfolio/react-airlines.png",
-    slug: "React Based UI Practice",
-    url: "https://github.com/donald-p-redding/react_airlines"
-  },
-  {
-    id: 6,
-    name: "Simple Photo Gallery",
-    category: ["ui"],
-    image: "images/portfolio/simple-photo-gallery.png",
-    slug: "jQuery UI Practice",
-    url: "https://github.com/donald-p-redding/simple_photo_gallery"
-
-  },
-  {
-    id: 7,
-    name: "Basic Todo Tracker",
-    category: ["ui"],
-    image: "images/portfolio/todo-tracker.png",
-    slug: "Heroku App With PostgreSQL DB",
-    url: "https://github.com/donald-p-redding/simple-todos"
-
-  },
+  }
 ];
 
 function Portfolios() {
@@ -87,7 +61,7 @@ function Portfolios() {
   const [dataIncrement] = useState(3);
   const [activeFilter, setActiveFilter] = useState("");
   const [visibleItems, setVisibleItems] = useState([]);
-  const [noMorePost, setNoMorePost] = useState(false);
+  const [noMorePost, setNoMorePost] = useState(true);
 
   useEffect(() => {
     setActiveFilter(filters[0].name.toLowerCase());
@@ -135,7 +109,7 @@ function Portfolios() {
 
   return (
     <>
-      <ul className="portfolio-filter list-inline">
+      {/* <ul className="portfolio-filter list-inline">
         {filters.map((filter) => (
           <li
             className={
@@ -149,7 +123,7 @@ function Portfolios() {
             {filter.name}
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       <div className="pf-filter-wrapper mb-4">
         <select
@@ -166,7 +140,7 @@ function Portfolios() {
 
       <div className="row portfolio-wrapper">
         {visibleItems.map((item) => (
-          <div className="col-md-4 col-sm-6 grid-item" key={item.id}>
+          <div className="col-sm-4 col-sm-6 grid-item" key={item.id}>
             <Portfolio portfolio={item} />
           </div>
         ))}
