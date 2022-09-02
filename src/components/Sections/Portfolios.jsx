@@ -26,7 +26,7 @@ const allData = [
     name: "Arroyo",
     category: ["frameworks"],
     image: "images/portfolio/bulk_10fps.gif",
-    slug: "A Lightweight Log Rehydration Tool",
+    slug: "A lightweight log rehydration tool to query logs archived in AWS S3 and re-ingest them into Elasticsearch that is built using React, Redux, and Express.",
     url: "https://github.com/Team-Arroyo/arroyo"
   },
     {
@@ -34,7 +34,7 @@ const allData = [
     name: "Arroyo Deploy",
     category: ["frameworks"],
     image: "images/portfolio/deploy.gif",
-    slug: "Automatically Deploy and Destory AWS Infrastructure for Arroyo",
+    slug: "Automatically deploy and destroy AWS infrastructure for Arroyo (SQS, S3, Lambda).",
     url: "https://github.com/Team-Arroyo/arroyo-deployment"
   },
   {
@@ -42,7 +42,7 @@ const allData = [
     name: "Request Bin",
     category: ["database"],
     image: "images/portfolio/request_bin_demo.gif",
-    slug: "Inspect and Debug HTTP Requests and Webhooks. Listed as contributor.",
+    slug: "Inspect and debug HTTP requests and webhooks. Built using PostgreSQL, MongoDB, Express, and React.",
     url: "https://github.com/olgashi/request_bin"
   },
   {
@@ -50,7 +50,7 @@ const allData = [
     name: "Chalkboard",
     category: ["database"],
     image: "images/portfolio/trello_demo.gif",
-    slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB",
+    slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB.",
     url: "https://github.com/donald-p-redding/trello_clone"
   }
 ];
