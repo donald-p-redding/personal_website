@@ -4,7 +4,7 @@ function ArroyoMedia () {
   return (
     <div>
       <figure className="arroyo-media">
-        <img alt="Arroyo User Interface" src="images/spotlight/arroyo-architecture.gif"></img>
+        <img alt="Arroyo Architecture" src="images/spotlight/arroyo-architecture.gif"></img>
       </figure>
       <figure className="arroyo-media">
         <img alt="Arroyo User Interface" src="images/portfolio/bulk_10fps.gif"></img>
