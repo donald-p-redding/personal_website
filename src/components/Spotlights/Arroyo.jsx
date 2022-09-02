@@ -1,9 +1,11 @@
 import ArroyoContent from "./ArroyoContent"; 
+import ArroyoMedia from "./ArroyoMedia";
 
 function Arroyo () {
   return (
     <section id="arroyo">
       <ArroyoContent />
+      <ArroyoMedia />
     </section>
 
   )

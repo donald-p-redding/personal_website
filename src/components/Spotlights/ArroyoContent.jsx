@@ -2,7 +2,7 @@ import React from "react";
 
 function ArroyoContent () {
   return (
-    <>
+    <div class="arroyo-content">
       <div class="center">
         <img alt="arroyo logo" src="images/spotlight/arroyologo_color_dark_bg.svg" />
       </div>
@@ -17,7 +17,7 @@ function ArroyoContent () {
         Arroyo's infrastructure is easily deployed to AWS with a single command. Once rehydration jobs are completed, Arroyo can automatically destroy that infrastructure to avoid unnecessary resource use.
       </p>
       <a rel="noreferrer" target="_blank" href="https://www.arroyoframework.com/case-study.html" className="btn btn-border-light btn-lg">Read Case Study</a>
-    </>
+    </div>
   )
 }
 
