@@ -140,7 +140,7 @@ function Portfolios() {
 
       <div className="row portfolio-wrapper">
         {visibleItems.map((item) => (
-          <div className="col-md-4 col-sm-6 grid-item" key={item.id}>
+          <div className="col-sm-4 col-sm-6 grid-item" key={item.id}>
             <Portfolio portfolio={item} />
           </div>
         ))}
