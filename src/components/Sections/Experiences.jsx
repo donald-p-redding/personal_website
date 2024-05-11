@@ -5,13 +5,20 @@ const experiencesData = [
   {
     id: 1,
     year: "2022 - Present",
+    degree: "Full-Stack Developer",
+    content:
+      `Magellan AI`,
+  },
+  {
+    id: 2,
+    year: "2022",
     degree: "Software Engineer",
     link: "https://www.arroyoframework.com/",
     content:
       `Arroyo`,
   },
   {
-    id: 2,
+    id: 3,
     year: "2019 - 2022",
     degree: "Capstone Student",
     link: "https://launchschool.com/",
@@ -19,21 +26,21 @@ const experiencesData = [
       "Launch School",
   },
   {
-    id: 3,
+    id: 4,
     year: "2016 - 2022",
     degree: "Project Manager",
     content:
       "Media Home Theater Inc. Los Angeles, California",
   },
   {
-    id: 4,
+    id: 5,
     year: "2010 - 2012",
     degree: "Bachelor’s Degree",
     content:
       "North Dakota State University. Fargo, North Dakota.",
   },
   {
-    id: 5,
+    id: 6,
     year: "2009 - 2010",
     degree: "Undergraduate Studies: Computer Science",
     content:

@@ -4,32 +4,32 @@ import Layout from "../components/Layout/Layout";
 import About from "../components/Sections/About";
 import Herosection from "../components/Sections/Herosection";
 import SectionHeading from "../components/Items/SectionHeading";
-import Funfacts from "../components/Sections/Funfacts";
 import Services from "../components/Sections/Services";
 import Experiences from "../components/Sections/Experiences";
 import Portfolios from "../components/Sections/Portfolios";
 import Contact from "../components/Sections/Contact";
-import Spotlights from "../components/Sections/Spotlights";
 import Arroyo from "../components/Spotlights/Arroyo";
 
 import { 
   FaJs,
   FaReact,
-  FaHtml5,
-  FaCss3Alt,
   FaNodeJs,
-  FaSketch,
   FaAws,
  } from "react-icons/fa";
 
  import {
-   SiPostgresql
+   SiPostgresql,
+   SiRubyonrails,
+   SiClickhouse,
+   SiTurbo,
+   SiStimulus,
+   SiRedis
  } from "react-icons/si"
 
  import {
-  DiMongodb,
   DiGo,
   DiDocker,
+  DiHeroku
  } from "react-icons/di"
 
 function Homepage() {
@@ -48,15 +48,15 @@ function Homepage() {
     },
     {
       id: 3,
-      name: "HTML",
+      name: "Turbo",
       content: "Lorem ipsum dolor sit amet consectetuer elit.",
-      Icon: FaHtml5,
+      Icon: SiTurbo,
     },
     {
       id: 4,
-      name: "CSS",
+      name: "Stimulus",
       content: "Lorem ipsum dolor sit amet consectetuer elit.",
-      Icon: FaCss3Alt,
+      Icon: SiStimulus,
     },
   ];
 
@@ -69,9 +69,9 @@ function Homepage() {
     },
     {
       id: 2,
-      name: "Ruby",
+      name: "Ruby on Rails",
       content: "Lorem ipsum dolor sit amet consectetuer elit.",
-      Icon: FaSketch,
+      Icon: SiRubyonrails,
     },
     {
       id: 3,
@@ -99,10 +99,22 @@ function Homepage() {
     },
     {
       id: 7,
-      name: "MongoDB",
+      name: "Clickhouse",
       content: "Lorem ipsum dolor sit amet consectetuer elit.",
-      Icon: DiMongodb,
+      Icon: SiClickhouse,
     },
+    {
+      id: 8,
+      name: "Heroku",
+      content: "",
+      Icon: DiHeroku
+    },
+    {
+      id: 9,
+      name: "Redis",
+      content: "",
+      Icon: SiRedis
+    }
   ]
 
   useEffect(() => {
