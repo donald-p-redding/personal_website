@@ -12,7 +12,7 @@ import {
 const headerData = {
   name: "Donald Redding",
   designation: "Software Engineer",
-  imageThumb: "/images/profile_pic.png",
+  imageThumb: "https://donald-p-redding.github.io/personal_website/images/profile_pic.png",
   social: {
     email: "mailto:don@donaldredding.dev",
     github: "https://github.com/donald-p-redding",
