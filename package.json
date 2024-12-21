@@ -2,7 +2,7 @@
   "name": "bako",
   "version": "1.0.0",
   "private": false,
-  "homepage": "./",
+  "homepage": "https://donald-p-redding.github.io/personal_website",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -26,6 +26,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
