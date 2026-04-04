@@ -16,19 +16,13 @@ const experiencesData = [
     content: "Arroyo (Open Source)",
   },
   {
-    id: 3,
-    year: "2025",
-    degree: "Personal Project",
-    content: "Minecraft Server Infrastructure",
-  },
-  {
-    id: 4,
+    id:3,
     year: "Mar 2016 - Apr 2022",
     degree: "Project Manager / Systems Engineer",
     content: "Media Home Theater, Los Angeles, CA",
   },
   {
-    id: 5,
+    id: 4,
     year: "2010 - 2012",
     degree: "B.A. Liberal Arts",
     content: "North Dakota State University, Fargo, ND",
