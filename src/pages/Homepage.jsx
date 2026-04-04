@@ -7,6 +7,7 @@ import Services from "../components/Sections/Services";
 import Experiences from "../components/Sections/Experiences";
 import Portfolios from "../components/Sections/Portfolios";
 import Arroyo from "../components/Spotlights/Arroyo";
+import SocialLinks from "../components/Sections/SocialLinks";
 
 import { 
   FaJs,
@@ -159,6 +160,13 @@ function Homepage() {
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Relevant Experience/Education" />
           <Experiences />
+        </section>
+      </div>
+
+      <div id="section-connect">
+        <section className="shadow-blue background-blue padding">
+          <SectionHeading title="Connect" />
+          <SocialLinks />
         </section>
       </div>
 

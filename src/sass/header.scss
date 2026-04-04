@@ -20,6 +20,14 @@ header {
     @include transition(0.3s);
     nav {
       margin-top: 40px;
+      flex: 1;
+      width: 100%;
+      .vertical-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
     }
     .header-inner {
       width: 100%;
