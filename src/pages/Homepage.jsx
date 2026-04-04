@@ -6,7 +6,6 @@ import SectionHeading from "../components/Items/SectionHeading";
 import Services from "../components/Sections/Services";
 import Experiences from "../components/Sections/Experiences";
 import Portfolios from "../components/Sections/Portfolios";
-import Contact from "../components/Sections/Contact";
 import Arroyo from "../components/Spotlights/Arroyo";
 
 import { 
@@ -163,12 +162,6 @@ function Homepage() {
         </section>
       </div>
 
-      <div id="section-contact">
-        <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Get in touch" />
-          <Contact />
-        </section>
-      </div>
     </Layout>
   );
 }

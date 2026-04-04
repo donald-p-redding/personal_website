@@ -33,7 +33,6 @@ const NAV_ITEMS = [
   { id: "section-portfolios",  icon: "icon-grid",       label: "Portfolio" },
   { id: "section-skills",      icon: "icon-bulb",       label: "Skills" },
   { id: "section-experiences", icon: "icon-graduation", label: "Experience" },
-  { id: "section-contact",     icon: "icon-phone",      label: "Contact" },
 ];
 
 function Header({ toggleHeader, toggleHandler }) {

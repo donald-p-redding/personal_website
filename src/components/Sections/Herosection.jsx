@@ -28,17 +28,7 @@ function Herosection() {
         >
           <i className="icon-pin"></i>Spotlight
         </a>
-        <div
-          className="spacer d-md-none d-lg-none d-sm-none"
-          data-height="10"
-        ></div>
-        <a
-          href="#section-contact"
-          className="btn btn-default btn-lg mr-3"
-          onClick={(e) => { e.preventDefault(); scrollToSection("section-contact"); }}
-        >
-          <i className="icon-envelope"></i>Contact me
-        </a>
+
       <a target="_blank" rel="noreferrer" href={aboutData.cvpath} className="btn btn-default btn-lg mr-3">
           <i className="icon-doc"></i>Download Resume
       </a>
