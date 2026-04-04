@@ -4,47 +4,34 @@ import Experience from "../Items/Experience";
 const experiencesData = [
   {
     id: 1,
-    year: "2022 - Present",
-    degree: "Full-Stack Developer",
-    content:
-      `Magellan AI`,
+    year: "Oct 2022 - Present",
+    degree: "Full-Stack Software Engineer",
+    content: "Magellan AI",
   },
   {
     id: 2,
-    year: "2022",
-    degree: "Software Engineer",
+    year: "Apr 2022 - Present",
+    degree: "Co-creator & Software Engineer",
     link: "https://www.arroyoframework.com/",
-    content:
-      `Arroyo`,
+    content: "Arroyo (Open Source)",
   },
   {
     id: 3,
-    year: "2019 - 2022",
-    degree: "Capstone Student",
-    link: "https://launchschool.com/",
-    content:
-      "Launch School",
+    year: "2025",
+    degree: "Personal Project",
+    content: "Minecraft Server Infrastructure",
   },
   {
     id: 4,
-    year: "2016 - 2022",
-    degree: "Project Manager",
-    content:
-      "Media Home Theater Inc. Los Angeles, California",
+    year: "Mar 2016 - Apr 2022",
+    degree: "Project Manager / Systems Engineer",
+    content: "Media Home Theater, Los Angeles, CA",
   },
   {
     id: 5,
     year: "2010 - 2012",
-    degree: "Bachelor’s Degree",
-    content:
-      "North Dakota State University. Fargo, North Dakota.",
-  },
-  {
-    id: 6,
-    year: "2009 - 2010",
-    degree: "Undergraduate Studies: Computer Science",
-    content:
-      "University of Minnesota. Minneapolis, Minnesota. ",
+    degree: "B.A. Liberal Arts",
+    content: "North Dakota State University, Fargo, ND",
   },
 ];
 

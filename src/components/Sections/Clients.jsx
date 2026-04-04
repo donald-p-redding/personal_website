@@ -4,23 +4,23 @@ import Slider from "react-slick";
 const clientsData = [
   {
     id: 1,
-    image: "images/clients/1.png",
+    image: "/images/clients/1.png",
   },
   {
     id: 2,
-    image: "images/clients/2.png",
+    image: "/images/clients/2.png",
   },
   {
     id: 3,
-    image: "images/clients/3.png",
+    image: "/images/clients/3.png",
   },
   {
     id: 4,
-    image: "images/clients/4.png",
+    image: "/images/clients/4.png",
   },
   {
     id: 5,
-    image: "images/clients/2.png",
+    image: "/images/clients/2.png",
   },
 ];
 

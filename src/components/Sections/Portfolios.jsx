@@ -16,7 +16,7 @@ const filters = [
   },
   {
     id: 4,
-    name: "database"
+    name: "Database"
   }
 ];
 
@@ -25,23 +25,23 @@ const allData = [
     id: 1,
     name: "Arroyo",
     category: ["frameworks"],
-    image: "images/portfolio/bulk_10fps.gif",
-    slug: "A lightweight log rehydration tool to query logs archived in AWS S3 and re-ingest them into Elasticsearch that is built using React, Redux, and Express.",
+    image: "/images/portfolio/bulk_10fps.gif",
+    slug: "Lightweight framework to rehydrate logs archived in AWS S3 back into Elasticsearch, with automated AWS infrastructure provisioning, Lambda-based processing, and S3 Select query support.",
     url: "https://github.com/Team-Arroyo/arroyo"
   },
     {
     id: 2,
     name: "Arroyo Deploy",
     category: ["frameworks"],
-    image: "images/portfolio/deploy.gif",
-    slug: "Automatically deploy and destroy AWS infrastructure for Arroyo (SQS, S3, Lambda).",
+    image: "/images/portfolio/deploy.gif",
+    slug: "Automated provisioning and teardown of Arroyo's AWS infrastructure (S3, SQS, Lambda, IAM) using AWS SDK, reducing ~30 async API calls to two single-line commands.",
     url: "https://github.com/Team-Arroyo/arroyo-deployment"
   },
   {
     id: 3,
     name: "Request Bin",
     category: ["database"],
-    image: "images/portfolio/request_bin_demo.gif",
+    image: "/images/portfolio/request_bin_demo.gif",
     slug: "Inspect and debug HTTP requests and webhooks. Built using PostgreSQL, MongoDB, Express, and React.",
     url: "https://github.com/olgashi/request_bin"
   },
@@ -49,7 +49,7 @@ const allData = [
     id: 4,
     name: "Chalkboard",
     category: ["database"],
-    image: "images/portfolio/trello_demo.gif",
+    image: "/images/portfolio/trello_demo.gif",
     slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB.",
     url: "https://github.com/donald-p-redding/trello_clone"
   }

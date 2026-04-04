@@ -7,7 +7,7 @@ const spotlightsData = [
     id: 1,
     title: "Log Rehydration With Arroyo",
     category: "Featured Work",
-    featureImage: "images/spotlight/arroyographic_color.png",
+    featureImage: "/images/spotlight/arroyographic_color.png",
     date: "12 August, 2022",
     author: "Don Redding",
     slug: "the-arroyo-framework",

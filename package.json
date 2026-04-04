@@ -2,7 +2,7 @@
   "name": "bako",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://donald-p-redding.github.io/personal_website",
+  "homepage": "https://donald-p-redding.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@testing-library/jest-dom": "^5.17.0",

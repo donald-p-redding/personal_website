@@ -2,12 +2,12 @@ import React from "react";
 
 export const aboutData = {
   cvpath: "https://drive.google.com/file/d/1CsPVCzpZPmElw50rAC2TnLcHirwVe3KJ/view?usp=sharing",
-  image: "images/candid_b&w.png",
+  image: "/images/candid_b&w.png",
   name: "Donald Redding",
   location: "Los Angeles, CA",
   email: "don@donaldredding.dev",
   aboutMe:
-    `I am a software engineer based out of Los Angeles, California. I cut my teeth in the world of low voltage construction before transitioning into software. The construction world taught me the importance of clear communication and the invaluable impact of mentorship. Software is inherently collaborative, and the ability to learn from the experiences of others is essential to me.`,
+    `I am a full-stack software engineer based out of Los Angeles, California. Prior to software, I spent six years managing large-scale commercial systems integration projects — an experience that sharpened my architectural thinking and deepened my appreciation for clear communication and mentorship. Software is inherently collaborative, and the ability to learn from the experiences of others is essential to me.`,
 };
 
 function About() {

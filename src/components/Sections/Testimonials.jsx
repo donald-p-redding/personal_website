@@ -7,7 +7,7 @@ const testimonialsData = [
     id: 1,
     content:
       "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!",
-    authorImage: "images/customer-1.png",
+    authorImage: "/images/customer-1.png",
     authorName: "Helen Doe",
     authorStatus: "Themeforest customer",
   },
@@ -15,7 +15,7 @@ const testimonialsData = [
     id: 2,
     content:
       "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!",
-    authorImage: "images/customer-2.png",
+    authorImage: "/images/customer-2.png",
     authorName: "Jane Doe",
     authorStatus: "Themeforest customer",
   },
@@ -23,7 +23,7 @@ const testimonialsData = [
     id: 3,
     content:
       "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!",
-    authorImage: "images/customer-2.png",
+    authorImage: "/images/customer-2.png",
     authorName: "Jane Doe",
     authorStatus: "Themeforest customer",
   },

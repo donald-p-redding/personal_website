@@ -5,8 +5,8 @@ import { aboutData } from "./About";
 const herosectionData = {
   name: "Welcome",
   aboutMe: [
-    "I'm a software engineer with experience building serverless solutions to derive additional insight into existing systems who enjoys collaborating with a team to tackle tricky problems.",
-    "I recently built Arroyo, a lightweight framework to rehydrate logs archived in cloud storage into Elasticsearch to breathe new life into older data."
+    "Full-stack software engineer with 8+ years of technical and leadership experience, including 3+ years building high-throughput data pipelines and B2B SaaS products.",
+    "Experienced in Ruby, Go, cloud-native AWS infrastructure, and Terraform. Prior background in large-scale commercial systems integration informs my architectural thinking and cross-team collaboration."
   ]
 };
 
