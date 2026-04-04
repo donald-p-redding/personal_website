@@ -18,7 +18,7 @@ const experiencesData = [
   {
     id:3,
     year: "Mar 2016 - Apr 2022",
-    degree: "Project Manager / Systems Engineer",
+    degree: "Project Manager",
     content: "Media Home Theater, Los Angeles, CA",
   },
   {
