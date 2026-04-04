@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { Link, useRouteMatch } from "react-router-dom";
 import { aboutData } from "../Sections/About";
 import {
@@ -26,13 +25,50 @@ const headerData = {
   },
 };
 
+const NAV_ITEMS = [
+  { id: "section-home",        icon: "icon-home",       label: "Home" },
+  { id: "section-about",       icon: "icon-user",       label: "About" },
+  { id: "section-spotlight",   icon: "icon-pin",        label: "Spotlight" },
+  { id: "section-portfolios",  icon: "icon-grid",       label: "Portfolio" },
+  { id: "section-skills",      icon: "icon-bulb",       label: "Skills" },
+  { id: "section-experiences", icon: "icon-graduation", label: "Experience" },
+  { id: "section-contact",     icon: "icon-phone",      label: "Contact" },
+];
+
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - 50;
+  window.scrollTo({ top, behavior: "smooth" });
+}
+
 function Header({ toggleHeader, toggleHandler }) {
   const [currentPath, setCurrentPath] = useState("");
+  const [activeSection, setActiveSection] = useState("");
   const match = useRouteMatch();
 
   useEffect(() => {
     setCurrentPath(match.path);
   }, [match]);
+
+  useEffect(() => {
+    if (currentPath !== "/") return;
+
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 100;
+      for (let i = NAV_ITEMS.length - 1; i >= 0; i--) {
+        const el = document.getElementById(NAV_ITEMS[i].id);
+        if (el && el.offsetTop <= scrollPos) {
+          setActiveSection(NAV_ITEMS[i].id);
+          return;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [currentPath]);
 
   return (
     <>
@@ -83,132 +119,23 @@ function Header({ toggleHeader, toggleHandler }) {
 
           <nav>
             <ul className="vertical-menu scrollspy">
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-home"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-home"></i>Home
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-home"></i>Home
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-about"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-user"></i>About
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-user"></i>About
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-spotlight"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-pin"></i>Spotlight
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-pin"></i>Spotlight
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-portfolios"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-grid"></i>Portfolio
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-grid"></i>Portfolio
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-skills"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-bulb"></i>Skills
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-bulb"></i>Skills
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-experiences"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-graduation"></i>Experience
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-graduation"></i>Resume
-                  </Link>
-                )}
-              </li>
-              <li>
-                {currentPath === "/" ? (
-                  <ScrollLink
-                    activeClass="active"
-                    to="section-contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    <i className="icon-phone"></i>Contact
-                  </ScrollLink>
-                ) : (
-                  <Link to="/">
-                    <i className="icon-phone"></i>Contact
-                  </Link>
-                )}
-              </li>
+              {NAV_ITEMS.map(({ id, icon, label }) => (
+                <li key={id}>
+                  {currentPath === "/" ? (
+                    <a
+                      className={activeSection === id ? "active" : ""}
+                      href={`#${id}`}
+                      onClick={(e) => { e.preventDefault(); scrollToSection(id); }}
+                    >
+                      <i className={icon}></i>{label}
+                    </a>
+                  ) : (
+                    <Link to="/">
+                      <i className={icon}></i>{label}
+                    </Link>
+                  )}
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -227,7 +154,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <FaGithub />
                   </a>
                 </li>
-                )}
+              )}
               {!headerData.social.email ? null : (
                 <li className="list-inline-item">
                   <a target="_blank" rel="noreferrer" href={headerData.social.email}>
@@ -236,7 +163,7 @@ function Header({ toggleHeader, toggleHandler }) {
                 </li>
               )}
               <li className="list-inline-item">
-                <a target="_blank" rel="noreferrer" href={aboutData.cvpath} >
+                <a target="_blank" rel="noreferrer" href={aboutData.cvpath}>
                   <FaFileDownload />
                 </a>
               </li>

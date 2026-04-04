@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { aboutData } from "./About";
 
 const herosectionData = {
@@ -9,6 +8,13 @@ const herosectionData = {
     "Experienced in Ruby, Go, cloud-native AWS infrastructure, and Terraform. Prior background in large-scale commercial systems integration informs my architectural thinking and cross-team collaboration."
   ]
 };
+
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - 50;
+  window.scrollTo({ top, behavior: "smooth" });
+}
 
 function Herosection() {
   return (
@@ -21,32 +27,24 @@ function Herosection() {
           <span className="dot"></span>
         </h1>
         {herosectionData.aboutMe.map(content => <p className="mb-4">{content}</p>)}
-        <ScrollLink
-          activeClass="active"
-          to="section-spotlight"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={50}
+        <a
+          href="#section-spotlight"
           className="btn btn-default btn-lg mr-3"
+          onClick={(e) => { e.preventDefault(); scrollToSection("section-spotlight"); }}
         >
           <i className="icon-pin"></i>Spotlight
-        </ScrollLink>
+        </a>
         <div
           className="spacer d-md-none d-lg-none d-sm-none"
           data-height="10"
         ></div>
-        <ScrollLink
-          activeClass="active"
-          to="section-contact"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={50}
+        <a
+          href="#section-contact"
           className="btn btn-default btn-lg mr-3"
+          onClick={(e) => { e.preventDefault(); scrollToSection("section-contact"); }}
         >
           <i className="icon-envelope"></i>Contact me
-        </ScrollLink>        
+        </a>
       <a target="_blank" rel="noreferrer" href={aboutData.cvpath} className="btn btn-default btn-lg mr-3">
           <i className="icon-doc"></i>Download Resume
       </a>

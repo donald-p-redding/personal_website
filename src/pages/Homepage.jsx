@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Element } from "react-scroll";
 import Layout from "../components/Layout/Layout";
 import About from "../components/Sections/About";
 import Herosection from "../components/Sections/Herosection";
@@ -122,31 +121,31 @@ function Homepage() {
   }, []);
   return (
     <Layout>
-      <Element name="section-home">
+      <div id="section-home">
         <Herosection />
-      </Element>
+      </div>
 
-      <Element name="section-about">
+      <div id="section-about">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="About Me" />
           <About />
         </section>
-      </Element>
+      </div>
 
-      <Element name="section-spotlight">
+      <div id="section-spotlight">
         <section className="shadow-blue arroyo-gradient padding">
           <Arroyo />
        </section>
-      </Element>
+      </div>
 
-      <Element name="section-portfolios">
+      <div id="section-portfolios">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Portfolio" />
           <Portfolios />
         </section>
-      </Element>
+      </div>
 
-      <Element name="section-skills">
+      <div id="section-skills">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Frontend" />
           <Services servicesData={frontEnd}/>
@@ -155,21 +154,21 @@ function Homepage() {
           <SectionHeading title="Backend" />
           <Services servicesData={backEnd}/>
         </section>
-      </Element>
+      </div>
 
-      <Element name="section-experiences">
+      <div id="section-experiences">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Relevant Experience/Education" />
           <Experiences />
         </section>
-      </Element>
+      </div>
 
-      <Element name="section-contact">
+      <div id="section-contact">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Get in touch" />
           <Contact />
         </section>
-      </Element>
+      </div>
     </Layout>
   );
 }
