@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaFileDownload
 } from "react-icons/fa";
+import { scrollToSection } from "../../utils/scrollToSection";
 
 const headerData = {
   name: "Donald Redding",
@@ -34,13 +35,6 @@ const NAV_ITEMS = [
   { id: "section-experiences", icon: "icon-graduation", label: "Experience" },
   { id: "section-contact",     icon: "icon-phone",      label: "Contact" },
 ];
-
-function scrollToSection(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - 50;
-  window.scrollTo({ top, behavior: "smooth" });
-}
 
 function Header({ toggleHeader, toggleHandler }) {
   const [currentPath, setCurrentPath] = useState("");

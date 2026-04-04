@@ -1,5 +1,6 @@
 import React from "react";
 import { aboutData } from "./About";
+import { scrollToSection } from "../../utils/scrollToSection";
 
 const herosectionData = {
   name: "Welcome",
@@ -8,13 +9,6 @@ const herosectionData = {
     "Experienced in Ruby, Go, cloud-native AWS infrastructure, and Terraform. Prior background in large-scale commercial systems integration informs my architectural thinking and cross-team collaboration."
   ]
 };
-
-function scrollToSection(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - 50;
-  window.scrollTo({ top, behavior: "smooth" });
-}
 
 function Herosection() {
   return (
