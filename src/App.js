@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
 
-import { BrowserRouter, Switch, Route, HashRouter as Router } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 
 function App() {
