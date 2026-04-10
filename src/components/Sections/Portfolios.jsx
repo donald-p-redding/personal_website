@@ -8,7 +8,7 @@ const filters = [
   },
   {
     id: 2,
-    name: "UI",
+    name: "Professional",
   },
   {
     id: 3,
@@ -16,21 +16,45 @@ const filters = [
   },
   {
     id: 4,
-    name: "Database"
+    name: "Tooling"
   }
 ];
 
 const allData = [
   {
     id: 1,
+    name: "Incremental Lift",
+    category: ["professional"],
+    image: "/images/portfolio/magellan_incremental_lift.png",
+    slug: "Architected a measurement feature that processes millions of impression and listener-behavior records to generate synthetic lookalike control groups — giving advertisers a grounded, data-driven read on true campaign lift without complex tracking infrastructure.",
+    url: "https://www.magellan.ai/products/incremental-lift"
+  },
+  {
+    id: 2,
+    name: "Broadcast Attribution",
+    category: ["professional"],
+    image: "/images/portfolio/magellan_broadcast_attribution.png",
+    slug: "Drove development from prototype to production of a cross-channel measurement product connecting broadcast radio campaigns to real business outcomes (site visits, leads, revenue) using market-level listener behavior modeling. Includes a public B2B API for programmatic reporting.",
+    url: "https://www.magellan.ai/products/broadcast-attribution"
+  },
+  {
+    id: 3,
+    name: "Brand Creative Discovery",
+    category: ["professional"],
+    image: "/images/portfolio/magellan_brand_creative.png",
+    slug: "Owned end-to-end development of a competitive intelligence feature that groups thousands of live ad placements into cohesive brand campaigns — enabling marketers to identify and act on emerging national audio advertising strategies. Delivered ahead of deadline; became a cornerstone of the platform.",
+    url: "https://www.magellan.ai/news-insights/get-deeper-insights-into-competitors-programmatic-and-run-of-network-strategies"
+  },
+  {
+    id: 4,
     name: "Arroyo",
     category: ["frameworks"],
     image: "/images/portfolio/bulk_10fps.gif",
     slug: "Lightweight framework to rehydrate logs archived in AWS S3 back into Elasticsearch, with automated AWS infrastructure provisioning, Lambda-based processing, and S3 Select query support.",
     url: "https://github.com/Team-Arroyo/arroyo"
   },
-    {
-    id: 2,
+  {
+    id: 5,
     name: "Arroyo Deploy",
     category: ["frameworks"],
     image: "/images/portfolio/deploy.gif",
@@ -38,17 +62,17 @@ const allData = [
     url: "https://github.com/Team-Arroyo/arroyo-deployment"
   },
   {
-    id: 3,
+    id: 6,
     name: "Request Bin",
-    category: ["database"],
+    category: ["tooling"],
     image: "/images/portfolio/request_bin_demo.gif",
     slug: "Inspect and debug HTTP requests and webhooks. Built using PostgreSQL, MongoDB, Express, and React.",
     url: "https://github.com/olgashi/request_bin"
   },
   {
-    id: 4,
+    id: 7,
     name: "Chalkboard",
-    category: ["database"],
+    category: ["tooling"],
     image: "/images/portfolio/trello_demo.gif",
     slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB.",
     url: "https://github.com/donald-p-redding/trello_clone"
@@ -64,8 +88,8 @@ function Portfolios() {
   const [noMorePost, setNoMorePost] = useState(true);
 
   useEffect(() => {
-    setActiveFilter(filters[0].name.toLowerCase());
-    setVisibleItems(getAllItems.filter((item) => item.id <= 6));
+    setActiveFilter("professional");
+    setVisibleItems(getAllItems.filter((item) => item.category.includes("professional")));
   }, [getAllItems]);
 
   const handleChange = (e) => {
@@ -109,7 +133,7 @@ function Portfolios() {
 
   return (
     <>
-      {/* <ul className="portfolio-filter list-inline">
+      <ul className="portfolio-filter list-inline">
         {filters.map((filter) => (
           <li
             className={
@@ -123,15 +147,16 @@ function Portfolios() {
             {filter.name}
           </li>
         ))}
-      </ul> */}
+      </ul>
 
       <div className="pf-filter-wrapper mb-4">
         <select
           className="portfolio-filter-mobile"
+          value={activeFilter}
           onChange={(e) => handleChange(e)}
         >
           {filters.map((filter) => (
-            <option value={filter.name} key={filter.id}>
+            <option value={filter.name.toLowerCase()} key={filter.id}>
               {filter.name}
             </option>
           ))}
