@@ -98,7 +98,7 @@ function Homepage() {
     },
     {
       id: 7,
-      name: "Clickhouse",
+      name: "ClickHouse",
       content: "",
       Icon: SiClickhouse,
     },
