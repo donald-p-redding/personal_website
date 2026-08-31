@@ -5,8 +5,8 @@ import { scrollToSection } from "../../utils/scrollToSection";
 const herosectionData = {
   name: "Welcome",
   aboutMe: [
-    "Full-stack software engineer with 3+ years building high-throughput data pipelines and B2B SaaS products, backed by 6+ years of technical project leadership in large-scale commercial systems integration.",
-    "That prior background shapes how I approach architecture, cross-team collaboration, and building software that scales."
+    "Full-stack software engineer with 4 years of experience building production systems across AI/ML, data engineering, and full-stack applications.",
+    "Experienced in designing and delivering high-throughput data pipelines, client-facing APIs, and data intensive features end-to-end."
   ]
 };
 
