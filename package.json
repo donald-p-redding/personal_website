@@ -53,5 +53,10 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
+  },
+  "overrides": {
+    "postcss-safe-parser": {
+      "postcss": "^8.4.31"
+    }
   }
 }
