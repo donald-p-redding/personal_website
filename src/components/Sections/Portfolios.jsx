@@ -12,11 +12,7 @@ const filters = [
   },
   {
     id: 3,
-    name: "Frameworks",
-  },
-  {
-    id: 4,
-    name: "Tooling"
+    name: "Open Source"
   }
 ];
 
@@ -48,35 +44,19 @@ const allData = [
   {
     id: 4,
     name: "Arroyo",
-    category: ["frameworks"],
+    category: ["open source"],
     image: "/images/portfolio/bulk_10fps.gif",
-    slug: "Lightweight framework to rehydrate logs archived in AWS S3 back into Elasticsearch, with automated AWS infrastructure provisioning, Lambda-based processing, and S3 Select query support.",
+    slug: "Open-source log rehydration tool that archives logs to AWS S3 and selectively rehydrates them back into Elasticsearch, with automated AWS infrastructure provisioning, Lambda-based concurrent processing, and S3 Select query support.",
     url: "https://github.com/Team-Arroyo/arroyo"
   },
   {
     id: 5,
     name: "Arroyo Deploy",
-    category: ["frameworks"],
+    category: ["open source"],
     image: "/images/portfolio/deploy.gif",
-    slug: "Automated provisioning and teardown of Arroyo's AWS infrastructure (S3, SQS, Lambda, IAM) using AWS SDK, reducing ~30 async API calls to two single-line commands.",
+    slug: "Automated provisioning and teardown of Arroyo's AWS infrastructure (S3, SQS, Lambda, IAM) using the AWS SDK, reducing ~30 async API calls to two single-line commands.",
     url: "https://github.com/Team-Arroyo/arroyo-deployment"
   },
-  {
-    id: 6,
-    name: "Request Bin",
-    category: ["tooling"],
-    image: "/images/portfolio/request_bin_demo.gif",
-    slug: "Inspect and debug HTTP requests and webhooks. Built using PostgreSQL, MongoDB, Express, and React.",
-    url: "https://github.com/olgashi/request_bin"
-  },
-  {
-    id: 7,
-    name: "Chalkboard",
-    category: ["tooling"],
-    image: "/images/portfolio/trello_demo.gif",
-    slug: "Trello-inspired productivity board for personal projects using Node.js, Express, React, Redux, and MongoDB.",
-    url: "https://github.com/donald-p-redding/trello_clone"
-  }
 ];
 
 function Portfolios() {

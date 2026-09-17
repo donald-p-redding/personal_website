@@ -6,14 +6,27 @@ export const aboutData = {
   name: "Donald Redding",
   location: "Los Angeles, CA",
   email: "don@donaldredding.dev",
-  aboutMe: [
-    `I'm a full-stack software engineer with four years of experience building production systems across AI/ML, data engineering, and full-stack applications.`,
-    `Before software, I spent six years in the construction industry. I started as an apprentice, where I learned the fundamentals and the importance of first principles, and eventually moved into managing projects and small teams. In the wake of the COVID-19 pandemic, I decided to make a career change and transition into software engineering.`,
-    `I spent two years studying at Launch School, a mastery-based online software engineering program where students are evaluated at each stage to ensure they have a strong grasp of the fundamentals. That emphasis on fundamentals resonated with me because it reminded me of how I had learned construction: understand the underlying principles first, then build from there.`,
-    `That chapter culminated in my admission to Launch School's Capstone program, where I worked with three other engineers scattered across the United States to build Arroyo.`,
-    `My experiences in both construction and software have also reinforced my affinity for mentorship. Software is inherently collaborative, and one of its greatest advantages is the ability to learn from people who have already solved problems you are encountering for the first time. I enjoy both sides of that relationship—learning from experienced engineers and sharing what I've learned with others.`
-  ],
+  aboutMe: `
+    I'm a full-stack software engineer with four years of professional experience building production software across web applications, data systems, and AI/ML.
+
+    Before software, I spent six years in the construction industry, starting as an apprentice and eventually managing projects and small teams. I was fortunate to have a fantastic mentor during that time who taught me a lot about leadership, communication, and the importance of getting the fundamentals right. I left construction with a playbook for approaching unfamiliar problems that I've carried with me into software.
+
+    In the wake of the COVID-19 pandemic, I decided to make a career change and spent two years studying at Launch School, a mastery-based software engineering program with a strong emphasis on fundamentals. That approach resonated with me because it was very similar to how I'd learned construction: understand the underlying principles first, then build from there.
+
+    That chapter culminated in Launch School's Capstone program, where I worked with three other engineers across the country to build Arroyo. From there, I joined Magellan AI, where I've spent the last four years working across full-stack applications, measurement products, high-throughput data systems, ML workflows, and more recently AI and agent tooling.
+
+    My experiences in construction and software have reinforced my affinity for mentorship. I enjoy both sides of that relationship—learning from engineers with different experiences than my own and sharing what I've learned with others.
+
+    Outside of work, I love tinkering and keeping busy. When I'm not working on DIY projects for friends and family, I'm happiest in my "home lab," where I do a lot of learning by doing. If I'm looking to learn a new technology or concept, I'll usually make a project out of it.
+
+    Anecdotally, I spent more time designing and building out a self-hosted Minecraft server with all the bells and whistles—automated backups, AWS hosting, infrastructure managed with Terraform, custom metrics, Discord plugins, etc.—than I did actually playing the game, but it was fun all the same.
+  `,
 };
+
+const aboutMeParagraphs = aboutData.aboutMe
+  .trim()
+  .split(/\n\s*\n/)
+  .map((paragraph) => paragraph.trim());
 
 function About() {
   return (
@@ -23,7 +36,7 @@ function About() {
       </div>
       <div className="col-md-9">
         <h2 className="mt-4 mt-md-0 mb-4">Hello,</h2>
-        {aboutData.aboutMe.map((paragraph, idx) => <p key={idx} className="mb-3">{paragraph}</p>)}
+        {aboutMeParagraphs.map((paragraph, idx) => <p key={idx} className="mb-3">{paragraph}</p>)}
         <div className="row my-4">
           <div className="col-md-6">
             <p className="mb-2">

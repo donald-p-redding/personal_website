@@ -4,7 +4,7 @@ import { scrollToSection } from "../../utils/scrollToSection";
 
 const headerData = {
   name: "Donald Redding",
-  designation: "Software Engineer",
+  designation: "Full-Stack Software Engineer",
   imageThumb: "https://donald-p-redding.github.io/personal_website/images/profile_pic.png",
   imageStyle: {
     width: '100px',

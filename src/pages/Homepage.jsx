@@ -9,112 +9,62 @@ import Portfolios from "../components/Sections/Portfolios";
 import Arroyo from "../components/Spotlights/Arroyo";
 import SocialLinks from "../components/Sections/SocialLinks";
 
-import { 
+import {
   FaJs,
   FaReact,
   FaNodeJs,
   FaAws,
+  FaHtml5,
  } from "react-icons/fa";
 
  import {
-   SiPostgresql,
+   SiRuby,
+   SiTypescript,
    SiRubyonrails,
+   SiExpress,
+   SiPostgresql,
    SiClickhouse,
-   SiTurbo,
-   SiStimulus,
-   SiRedis
+   SiElasticsearch,
+   SiRedis,
+   SiTerraform,
+   SiApachekafka,
  } from "react-icons/si"
 
- import {
-  DiGo,
-  DiDocker,
-  DiHeroku
- } from "react-icons/di"
+ import { DiDocker } from "react-icons/di"
+ import { TbSql } from "react-icons/tb"
 
 function Homepage() {
+  const languages = [
+    { id: 1, name: "Ruby", Icon: SiRuby },
+    { id: 2, name: "TypeScript", Icon: SiTypescript },
+    { id: 3, name: "JavaScript", Icon: FaJs },
+    { id: 4, name: "SQL", Icon: TbSql },
+  ];
+
   const frontEnd = [
-    {
-      id: 1,
-      name: "JavaScript",
-      content: "",
-      Icon: FaJs,
-    },
-    {
-      id: 2,
-      name: "React",
-      content: "",
-      Icon: FaReact,
-    },
-    {
-      id: 3,
-      name: "Turbo",
-      content: "",
-      Icon: SiTurbo,
-    },
-    {
-      id: 4,
-      name: "Stimulus",
-      content: "",
-      Icon: SiStimulus,
-    },
+    { id: 1, name: "React", Icon: FaReact },
+    { id: 2, name: "HTML/CSS", Icon: FaHtml5 },
   ];
 
   const backEnd = [
-    {
-      id: 1,
-      name: "Node",
-      content: "",
-      Icon: FaNodeJs,
-    },
-    {
-      id: 2,
-      name: "Ruby on Rails",
-      content: "",
-      Icon: SiRubyonrails,
-    },
-    {
-      id: 3,
-      name: "Go",
-      content: "",
-      Icon: DiGo,
-    },
-    {
-      id: 4,
-      name: "Docker",
-      content: "",
-      Icon: DiDocker,
-    },
-    {
-      id: 5,
-      name: "AWS",
-      content: "",
-      Icon: FaAws,
-    },
-    {
-      id: 6,
-      name: "SQL",
-      content: "",
-      Icon: SiPostgresql,
-    },
-    {
-      id: 7,
-      name: "ClickHouse",
-      content: "",
-      Icon: SiClickhouse,
-    },
-    {
-      id: 8,
-      name: "Heroku",
-      content: "",
-      Icon: DiHeroku
-    },
-    {
-      id: 9,
-      name: "Redis",
-      content: "",
-      Icon: SiRedis
-    }
-  ]
+    { id: 1, name: "Ruby on Rails", Icon: SiRubyonrails },
+    { id: 2, name: "Node.js", Icon: FaNodeJs },
+    { id: 3, name: "Express", Icon: SiExpress },
+  ];
+
+  const data = [
+    { id: 1, name: "PostgreSQL", Icon: SiPostgresql },
+    { id: 2, name: "ClickHouse", Icon: SiClickhouse },
+    { id: 3, name: "Elasticsearch", Icon: SiElasticsearch },
+    { id: 4, name: "Redis", Icon: SiRedis },
+  ];
+
+  const infrastructure = [
+    { id: 1, name: "AWS", Icon: FaAws },
+    { id: 2, name: "Docker", Icon: DiDocker },
+    { id: 3, name: "Terraform", Icon: SiTerraform },
+    { id: 4, name: "Kafka", Icon: SiApachekafka },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -147,12 +97,24 @@ function Homepage() {
 
       <div id="section-skills">
         <section className="shadow-blue white-bg padding">
+          <SectionHeading title="Languages" />
+          <Services servicesData={languages}/>
+        </section>
+        <section className="shadow-blue white-bg padding">
           <SectionHeading title="Frontend" />
           <Services servicesData={frontEnd}/>
         </section>
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Backend" />
           <Services servicesData={backEnd}/>
+        </section>
+        <section className="shadow-blue white-bg padding">
+          <SectionHeading title="Data" />
+          <Services servicesData={data}/>
+        </section>
+        <section className="shadow-blue white-bg padding">
+          <SectionHeading title="Infrastructure & Data Systems" />
+          <Services servicesData={infrastructure}/>
         </section>
       </div>
 
